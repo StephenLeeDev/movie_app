@@ -24,10 +24,10 @@ class App extends React.Component {
     this.getMovies();
   }
   render() {
-    const {isLoading, movies} = this.state;
+    const {isLoading, movies} = this.state; //Work to skip "this.state.".
     return (
       <section className="container">
-        {isLoading ? (
+        {isLoading ? ( //If loading, print "Loading..." or print movies's Information
           <div className="loader">
             <span className="loader__text">Loading...</span>
           </div>

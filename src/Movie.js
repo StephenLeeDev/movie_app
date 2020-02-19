@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Movie.css';
 
+//Function to act as a data model
 function Movie({year, title, summary, poster, genres}) {
   return (
     <div className="movie">
@@ -22,6 +23,7 @@ function Movie({year, title, summary, poster, genres}) {
   );
 }
 
+//Check movie information's properties' types
 Movie.propTypes = {
   id: PropTypes.number.isRequired,
   year: PropTypes.number.isRequired,
